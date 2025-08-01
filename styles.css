@@ -4,6 +4,7 @@ body {
     background-color:rgba(255, 255, 224, 0.2);
     margin: 0;
     padding: 20px;
+    font-size: 18px;
   }
   
   h1 {
@@ -92,4 +93,15 @@ body {
 
 .rating-spacer {
   width: 140px; 
+}
+
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+}
+
+/* 모바일에서 살짝 조정 */
+@media (max-width: 600px) {
+  .audio-column h3 { font-size: 1.1rem; }
+  .audio-column button { font-size: 0.9rem; padding: 6px 12px; }
 }
