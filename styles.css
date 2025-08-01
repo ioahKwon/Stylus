@@ -16,16 +16,15 @@ body {
   
   .audio-row {
   display: flex;
-  gap: 24px;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
 }
   .audio-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 140px;
-  min-height: 160px;  /* ✅ 칼럼 높이 통일 */
+  flex: 1 1 100%;  /* 모바일에선 한 줄에 하나씩 */
+  max-width: 100%;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  padding: 0 8px;
 }
   .audio-column h3 {
     margin-bottom: 8px;
