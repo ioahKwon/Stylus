@@ -5,56 +5,91 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>Music Style Transfer with Time-Varying Inversion of Diffusion Models</h1>
+  <h1>음악 스타일 반영 퀄리티 평가 <br> (Music Stylization Quality Evaluation)</h1>
+  <b> </b> <br><br>
+  
+  [Kor] 본 설문은 스타일 오디오를 활용하여, 컨텐츠 오디오의 스타일이 얼마나 변화되었는지를 평가하기 위한 사용자 연구입니다. 
+  아래에 제시된 컨텐츠 오디오와 스타일 오디오를 먼저 들으신 후, 여러 개의 결과 아웃풋 오디오 중에서 <b>스타일 오디오의 특징을 얼마나 잘 반영하고 있는지</b>에 따라 각 아웃풋에 점수를 매겨주시기 바랍니다.
+  
+  <br> <br>
+  [Eng] This user study aims to evaluate how effectively the style of a reference audio clip is reflected in the stylized outputs.
+  Please listen to the given content audio and style reference audio first. Then, for each stylized output, rate how well it captures the style characteristics of the reference audio.
+  <!--
+  
   <p><strong>Authors:</strong> Sifei Li<sup>1,2</sup>, Yuxin Zhang<sup>1,2</sup>, Fan Tang<sup>3</sup>, Chongyang Ma<sup>4</sup>, Weiming Dong<sup>1,2</sup> (Corresponding author), Changsheng Xu<sup>1,2</sup></p>
   <p><strong>Affiliations:</strong> <sup>1</sup>MAIS, Institute of Automation, CAS, <sup>2</sup>School of Artificial Intelligence, UCAS, <sup>3</sup>Institute of Computing Technology, CAS, <sup>4</sup>Kuaishou Technology</p>
+  
   <div>
       <a class="button" href="https://arxiv.org/abs/2402.13763">Paper</a>
       <a class="button" href="https://github.com/lsfhuihuiff/MusicTI_AAAI2024">Code</a>
       <a class="button" href="https://drive.google.com/file/d/1_RjOMwaW8eFrm1dBNtKeuDUAZ9ZG9-Sh/view?usp=drive_link">Dataset</a>
   </div>
+
+-->
+
   <!-- !-- group1 --> 
   <div class="audio-group">
     <div class="audio-row">
-      <div class="group-number1">Cornet </div>
+      <div class="group-number1"> Case 1<br>Audio (1/3)</div>
+  
       <div class="audio-column">
-        <h3>Style audio</h3>
+        <h3>Content</h3>
         <audio controls>
-          <source src="./samples_wav/Style/cornet.wav" type="audio/mpeg">
+          <source src="..." type="audio/mpeg">
         </audio>
       </div>
+  
       <div class="audio-column">
-        <h3>Content audio</h3>
+        <h3>Style</h3>
         <audio controls>
-          <source src="./samples_wav/Content/relieve.wav" type="audio/mpeg">
+          <source src="..." type="audio/mpeg">
         </audio>
       </div>
+  
       <div class="audio-column">
-        <h3>Our results</h3>
+        <h3>Result 1</h3>
         <audio controls>
-          <source src="./samples_wav/Our_results/relieve_cornet.wav" type="audio/mpeg">
-        </audio>
-      </div>
-      <div class="audio-column">
-        <h3>TI+R</h3>
-        <audio controls>
-          <source src="./samples_wav/TI+R/relieve_cornet.wav" type="audio/mpeg">
-        </audio>
-      </div>
-      <div class="audio-column">
-        <h3>SS VQVAE</h3>
-        <audio controls>
-          <source src="./samples_wav/SS_VQVAE/relieve_cornet.wav" type="audio/mpeg">
-        </audio>
-      </div>
-      <div class="audio-column">
-        <h3>MUSICGEN</h3>
-        <audio controls>
-          <source src="./samples_wav/MUSICGEN/relieve_cornet.wav" type="audio/mpeg">
+          <source src="..." type="audio/mpeg">
         </audio>
       </div>
     </div>
   </div>
+
+<div class="evaluation-block">
+  <h4>Result 1 Evaluation</h4>
+
+  <label>1. Content Preservation:</label>
+  <select name="result1-content">
+    <option value="">-</option>
+    <option value="1">1 (Poor)</option>
+    <option value="2">2</option>
+    <option value="3">3 (Neutral)</option>
+    <option value="4">4</option>
+    <option value="5">5 (Excellent)</option>
+  </select> <br>
+
+  <label>2. Style Reflection:</label>
+  <select name="result1-style">
+    <option value="">-</option>
+    <option value="1">1 (Poor)</option>
+    <option value="2">2</option>
+    <option value="3">3 (Neutral)</option>
+    <option value="4">4</option>
+    <option value="5">5 (Excellent)</option>
+  </select> <br>
+
+  <label>3. Overall Quality:</label>
+  <select name="result1-overall">
+    <option value="">-</option>
+    <option value="1">1 (Poor)</option>
+    <option value="2">2</option>
+    <option value="3">3 (Neutral)</option>
+    <option value="4">4</option>
+    <option value="5">5 (Excellent)</option>
+  </select> <br>
+</div>
+
+
 <!-- group2 -->
   <div class="audio-group">
     <div class="audio-row">
