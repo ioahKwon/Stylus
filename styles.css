@@ -53,7 +53,9 @@ body {
   
   audio {
   width: 100%;
-  height: 54px;
+  height: 64px;               
+  padding: 8px 0;             
+  box-sizing: border-box;     
   touch-action: manipulation;
 }
 
@@ -90,5 +92,5 @@ body {
 }
 
 .rating-spacer {
-  width: 140px; /* content, style 자리 맞추기용 */
+  width: 140px; 
 }
