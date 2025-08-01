@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:rgba(255, 255, 224, 0.2);
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .audio-group {
+    margin-bottom: 10px;
+  }
+  
+  .audio-row {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .group-number {
+    font-weight: bold;
+    width: 100px;
+    margin-right: 10px;
+  }
+
+  .group-number1 {
+    font-weight: bold;
+    width: 100px;
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+  
+  .audio-column {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  audio {
+    width: 100%;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #808080;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
