@@ -1,2 +1,4 @@
 # Stylus
-Music Style Transfer
+
+
+Official repository for the paper "Stylus"
